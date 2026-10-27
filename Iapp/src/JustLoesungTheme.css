@@ -448,3 +448,26 @@ main > section :is(h1, h2) em {
   transform: translateY(-1px);
 }
 
+
+/* Keep the hero tagline prominent and aligned with the left edge of the copy. */
+.hero .hero-location { align-self: flex-start; text-align: left; font-size: clamp(18px, 1.4vw, 24px); }
+
+
+@media (max-width: 680px) {
+  .topline { height: 32px; }
+  .topline-inner { width: calc(100% - 28px); justify-content: center; }
+  .topline-inner > span { display: none; }
+  .topline-inner > div { justify-content: center; }
+  .topline .availability { white-space: nowrap; font-size: 11px; }
+}
+
+
+/* Keep the availability label visible at every viewport size. */
+.topline { display: block !important; visibility: visible !important; opacity: 1 !important; }
+.topline-inner { position: relative; }
+.topline-inner > div { display: flex !important; visibility: visible !important; opacity: 1 !important; }
+.topline .availability { display: inline-flex !important; align-items: center; visibility: visible !important; opacity: 1 !important; color: #fff !important; }
+.topline .availability i { flex: 0 0 6px; }
+@media (min-width: 681px) { .topline-inner > div { margin-left: auto; } }
+
+
