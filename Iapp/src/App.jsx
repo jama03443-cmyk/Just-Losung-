@@ -8,7 +8,7 @@ const content = {
   fr: {
     nav: ['Services', 'Tarifs', 'À propos', 'Contact'], navCta: 'Demander une démo',
     top: 'Agence web pour PME · Bienne · Neuchâtel · Berne', available: 'Disponible pour de nouveaux projets',
-    eyebrow: 'Agence web en Suisse', hero: <>Plus qu'un simple site web :<br/><em>le moteur de croissance digital<br/>pour nos PME.</em></>,
+    eyebrow: 'Agence web en Suisse', hero: <>Plus qu'un simple site web&nbsp;:<br/><em>le moteur de croissance digital<br/>pour nos PME.</em></>,
     lead: <>Bien plus qu'une présence en ligne : une plateforme digitale pour satisfaire et fidéliser vos clients actuels, et attirer de nouveaux prospects. <strong>Notre devise : les clients de nos clients sont aussi nos clients.</strong></>,
     cta: 'Demander une démo', discover: 'Découvrir nos services', proof: 'Un contact direct.', proof2: 'De la première idée à la mise en ligne.', proof3: 'Accompagnement personnalisé',
     visual: 'Un site à votre image, prêt à grandir avec vous.', trust: 'Le web au service des entreprises locales', trustItems: ['PME', 'INDÉPENDANTS', 'COMMERCES', 'ENTREPRENEURS'],
