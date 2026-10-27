@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root{font-family:'DM Sans',sans-serif;color:#19251f;@apply bg-white;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}*{box-sizing:border-box}body{margin:0;min-width:320px}button,a{-webkit-tap-highlight-color:transparent}::selection{background:#c9f279;color:#1b2922}
+/* Consistent borderless, rounded shape for every button and card. */
+:where(button, [role="button"], a.button, a[class*="button"], a[class*="cta"], a[class*="action"], a.text-link) {
+  border: none !important;
+  border-radius: 999px !important;
+}
+
+:where([class*="card"], [class*="Card"]) {
+  border: none !important;
+  border-radius: 22px !important;
+}
+
+/* Consistent breathing room between groups of cards. */
+:where(.services-grid, .services-offers, .pricing-grid, .contact-methods, .about-step-grid) {
+  gap: 24px !important;
+}
+
+.services-grid {
+  border: 0 !important;
+}
+
+@media (max-width: 760px) {
+  :where(.services-grid, .services-offers, .pricing-grid, .contact-methods, .about-step-grid) {
+    gap: 18px !important;
+  }
+}
